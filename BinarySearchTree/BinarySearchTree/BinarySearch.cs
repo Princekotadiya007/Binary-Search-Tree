@@ -60,6 +60,10 @@ namespace BinarySearchTree
                 this.rightTree.Display();
             }
         }
-
+        //Method to Get Size of the binary tree
+        public void GetSize()
+        {
+            Console.WriteLine("Size of Binary Tree " + " " + (1 + this.leftCount + this.rightCount));
+        }
     }
 }

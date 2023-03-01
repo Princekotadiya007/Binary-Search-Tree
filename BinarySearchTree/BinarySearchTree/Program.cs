@@ -15,7 +15,7 @@ namespace BinarySearchTree
             while (flag)
             {
                 Console.WriteLine("Welcome to Binary Search");
-                Console.WriteLine("\n1.CreateBinaryTree");
+                Console.WriteLine("\n1.CreateBinaryTree,\n2.SizeOfBinaryTree");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -26,6 +26,23 @@ namespace BinarySearchTree
                         binary.Display();
                         break;
                     case 2:
+                        Console.WriteLine("Inserting more node and get size of binary tree ");
+                        binary.Insert(30);
+                        binary.Insert(70);
+                        binary.Insert(22);
+                        binary.Insert(40);
+                        binary.Insert(60);
+                        binary.Insert(95);
+                        binary.Insert(11);
+                        binary.Insert(65);
+                        binary.Insert(3);
+                        binary.Insert(16);
+                        binary.Insert(63);
+                        binary.Insert(67);
+                        binary.Display();
+                        binary.GetSize();
+                        break;
+                    case 3:
                         flag = false;   
                         break;
                 }
